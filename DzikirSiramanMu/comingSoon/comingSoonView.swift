@@ -14,7 +14,7 @@ class comingSoonView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imageComing.image = UIImage(named: "comingsoon")
-        self.textComing.text = "Comingsoon! أَسْتَغْفِرُ اللّٰهَ"
+        self.textComing.text = "Segera hadir! أَسْتَغْفِرُ اللّٰهَ"
         // Do any additional setup after loading the view.
     }
 
