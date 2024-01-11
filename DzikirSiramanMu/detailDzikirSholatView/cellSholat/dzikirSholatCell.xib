@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="dzikirSholatCell" customModule="DzikirSiramanMu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A18-g7-lof">
+                        <rect key="frame" x="15" y="14.999999999999998" width="290" height="22.333333333333329"/>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0d-dV-gr0" userLabel="textArti">
+                        <rect key="frame" x="16" y="62.333333333333336" width="288" height="94.666666666666657"/>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="s0d-dV-gr0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="I8I-xI-Ysy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="s0d-dV-gr0" secondAttribute="bottom" constant="5" id="PKu-Ws-eac"/>
+                    <constraint firstAttribute="trailing" secondItem="A18-g7-lof" secondAttribute="trailing" constant="15" id="ViD-bP-TBe"/>
+                    <constraint firstItem="A18-g7-lof" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XaX-Sz-sf3"/>
+                    <constraint firstItem="A18-g7-lof" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="gox-KI-9rp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="s0d-dV-gr0" secondAttribute="trailing" id="wZF-eP-Kas"/>
+                    <constraint firstItem="s0d-dV-gr0" firstAttribute="top" secondItem="A18-g7-lof" secondAttribute="bottom" constant="25" id="yYp-Zt-OAo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textArti" destination="s0d-dV-gr0" id="omb-UM-rYF"/>
+                <outlet property="textDzikirSholat" destination="A18-g7-lof" id="1nN-LU-LQl"/>
+            </connections>
+            <point key="canvasLocation" x="-102.29007633587786" y="64.436619718309856"/>
+        </tableViewCell>
+    </objects>
+</document>

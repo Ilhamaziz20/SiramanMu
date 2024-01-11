@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="detailDzikirPagiView" customModule="DzikirSiramanMu" customModuleProvider="target">
+            <connections>
+                <outlet property="dzikirPagiTable" destination="JfF-kv-y9h" id="iMU-fu-wVZ"/>
+                <outlet property="textLabelTop" destination="bKk-5m-EBN" id="RnJ-YB-I4b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKk-5m-EBN">
+                    <rect key="frame" x="0.0" y="89" width="393" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JfF-kv-y9h">
+                    <rect key="frame" x="0.0" y="161" width="393" height="691"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bKk-5m-EBN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="D4Y-ex-0gk"/>
+                <constraint firstItem="JfF-kv-y9h" firstAttribute="top" secondItem="bKk-5m-EBN" secondAttribute="bottom" constant="35" id="Jou-zc-xSY"/>
+                <constraint firstItem="JfF-kv-y9h" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NJr-bp-FGH"/>
+                <constraint firstAttribute="bottom" secondItem="JfF-kv-y9h" secondAttribute="bottom" id="WTA-aZ-sKR"/>
+                <constraint firstItem="bKk-5m-EBN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="nFC-42-wZQ"/>
+                <constraint firstItem="bKk-5m-EBN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nNX-cc-ayi"/>
+                <constraint firstItem="JfF-kv-y9h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tv2-3k-a1H"/>
+            </constraints>
+            <point key="canvasLocation" x="-109.16030534351144" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
