@@ -17,7 +17,7 @@ class tabBarViewController: UITabBarController {
         let dzikir = DzikirViewController ()
         
         home.title = "SiramanMu"
-        jadwal.title = "Jadwal Kajian"
+        jadwal.title = "Jadwal Kajian Rutin"
         dzikir.title = "Dzikir"
     }
 
