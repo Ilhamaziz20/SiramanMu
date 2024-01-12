@@ -16,7 +16,8 @@ class mainMenuDzikirViewController: UIViewController {
     var isiDataDzikir: [isiDzikir] = [
         isiDzikir(icon: "koran", label: "Dzikir Pagi & Petang"),
         isiDzikir(icon: "praying", label: "Dzikir Setelah Sholat"),
-        isiDzikir(icon: "ramadan", label: "Do'a Sehari-hari")
+        isiDzikir(icon: "ramadan", label: "Do'a Sehari-hari"),
+        isiDzikir(icon: "counter", label: "Penghitung Dzikir")
     ]
     
     override func viewDidLoad() {
@@ -30,8 +31,10 @@ class mainMenuDzikirViewController: UIViewController {
         self.dzikirCollectionView.delegate = self
         self.dzikirCollectionView.dataSource = self
         self.dzikirCollectionView.register(UINib(nibName: "mainDzikirCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "mainDzikirCollectionViewCell")
-    }}
-extension mainMenuDzikirViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    }
+}
+
+extension mainMenuDzikirViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.isiDataDzikir.count
     }
@@ -48,14 +51,23 @@ extension mainMenuDzikirViewController: UICollectionViewDelegate, UICollectionVi
         let menudetail = detailDzikirPagiView()
         let menudetailsholat = detailDzikirSholatView ()
         let menucoming = comingSoonView()
-        if indexPath.row == 0 {
-            navigationController?.pushViewController(menudetail, animated: true)}
-        if indexPath.row == 1 {
+        let menuDzikirCounter = DzikirCounterView()
+        switch indexPath.row {
+        case 0:
+            navigationController?.pushViewController(menudetail, animated: true)
+        case 1:
             navigationController?.pushViewController(menudetailsholat, animated: true)
-        }
-        if indexPath.row == 2 {
+        case 2:
             navigationController?.pushViewController(menucoming, animated: true)
+        case 3:
+            navigationController?.pushViewController(menuDzikirCounter, animated: true)
+        default:
+            break
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (collectionView.frame.width / 2) - 20, height: 150)
     }
 }
     /*

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XG-WC-Ddu">
-                    <rect key="frame" x="83" y="415.66666666666669" width="226" height="20.333333333333314"/>
+                    <rect key="frame" x="176" y="416" width="41.333333333333343" height="20.333333333333314"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -41,12 +42,11 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="KCU-tT-aX0" secondAttribute="bottom" id="5Fw-q9-gkn"/>
-                <constraint firstItem="1XG-WC-Ddu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="83" id="77X-TV-3Yn"/>
                 <constraint firstItem="KCU-tT-aX0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9lw-RK-jP7"/>
-                <constraint firstItem="1XG-WC-Ddu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="356.67000000000002" id="EX4-t5-eab"/>
+                <constraint firstItem="1XG-WC-Ddu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OFD-3M-7Ue"/>
                 <constraint firstItem="KCU-tT-aX0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OYp-7k-YxZ"/>
-                <constraint firstItem="KCU-tT-aX0" firstAttribute="top" secondItem="1XG-WC-Ddu" secondAttribute="bottom" constant="231.33000000000001" id="Rec-zq-GYX"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1XG-WC-Ddu" secondAttribute="trailing" constant="84" id="WZq-1g-Jy1"/>
+                <constraint firstItem="KCU-tT-aX0" firstAttribute="top" secondItem="1XG-WC-Ddu" secondAttribute="bottom" priority="750" constant="231" id="WJ8-o5-Gue"/>
+                <constraint firstItem="1XG-WC-Ddu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cOp-IU-Vcd"/>
             </constraints>
             <point key="canvasLocation" x="116.79389312977099" y="19.718309859154932"/>
         </view>
