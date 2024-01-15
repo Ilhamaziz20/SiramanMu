@@ -33,6 +33,8 @@
 		F8B380F02B4E2EB400536EBA /* dzikirPagiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B380EE2B4E2EB400536EBA /* dzikirPagiCell.xib */; };
 		F8B636602B4FCB1700CFCCCB /* tabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6365E2B4FCB1700CFCCCB /* tabBarViewController.swift */; };
 		F8B636612B4FCB1700CFCCCB /* tabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B6365F2B4FCB1700CFCCCB /* tabBarViewController.xib */; };
+		FEEBCF802B50BBB20080CBDE /* DzikirCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBCF7E2B50BBB20080CBDE /* DzikirCounterView.swift */; };
+		FEEBCF812B50BBB20080CBDE /* DzikirCounterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEBCF7F2B50BBB20080CBDE /* DzikirCounterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		F8B380EE2B4E2EB400536EBA /* dzikirPagiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dzikirPagiCell.xib; sourceTree = "<group>"; };
 		F8B6365E2B4FCB1700CFCCCB /* tabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarViewController.swift; sourceTree = "<group>"; };
 		F8B6365F2B4FCB1700CFCCCB /* tabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tabBarViewController.xib; sourceTree = "<group>"; };
+		FEEBCF7E2B50BBB20080CBDE /* DzikirCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DzikirCounterView.swift; sourceTree = "<group>"; };
+		FEEBCF7F2B50BBB20080CBDE /* DzikirCounterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DzikirCounterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		F890B1352B3C071900AD1A90 /* DzikirSiramanMu */ = {
 			isa = PBXGroup;
 			children = (
+				FEEBCF7D2B50BB600080CBDE /* DzikirCounter */,
 				F8B6365D2B4FCAF400CFCCCB /* tabBarMenu */,
 				F89C22D52B450EC500A67F97 /* detailDzikirSholatView */,
 				F89C22D02B3CFA5500A67F97 /* comingSoon */,
@@ -207,6 +212,15 @@
 			path = tabBarMenu;
 			sourceTree = "<group>";
 		};
+		FEEBCF7D2B50BB600080CBDE /* DzikirCounter */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBCF7E2B50BBB20080CBDE /* DzikirCounterView.swift */,
+				FEEBCF7F2B50BBB20080CBDE /* DzikirCounterView.xib */,
+			);
+			path = DzikirCounter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,6 +287,7 @@
 				F89C22E62B459B7C00A67F97 /* dzikirSholatCell.xib in Resources */,
 				F890B1402B3C071B00AD1A90 /* Assets.xcassets in Resources */,
 				F890B15D2B3C29D900AD1A90 /* mainDzikirCollectionViewCell.xib in Resources */,
+				FEEBCF812B50BBB20080CBDE /* DzikirCounterView.xib in Resources */,
 				F89C22E22B459B4C00A67F97 /* detailDzikirSholatView.xib in Resources */,
 				F890B1622B3C784600AD1A90 /* detailDzikirPagiView.xib in Resources */,
 				F89C22D42B3CFA7700A67F97 /* comingSoonView.xib in Resources */,
@@ -288,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEBCF802B50BBB20080CBDE /* DzikirCounterView.swift in Sources */,
 				F890B13B2B3C071900AD1A90 /* ViewController.swift in Sources */,
 				F89C22D32B3CFA7700A67F97 /* comingSoonView.swift in Sources */,
 				F890B1612B3C784600AD1A90 /* detailDzikirPagiView.swift in Sources */,
