@@ -66,12 +66,14 @@ extension DzikirCounterView {
         UserDefaults.standard.set(counter, forKey: "counter")
         updateCounterLabel()
     }
-    
     @objc func resetCounter() {
         counter = 0
+        UserDefaults.standard.set(counter, forKey: "counter")
+        updateCounterLabel()
         configureCounterLabel()
     }
     func updateCounterLabel() {
-        counterLabel.text = "\(counter)"
+        configureCounterLabel()
+        counterLabel.text = counter == 0 ? "Tekan di sini untuk menghitung" : "\(counter)"
     }
 }
