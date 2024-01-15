@@ -19,6 +19,9 @@ class DzikirCounterView: UIViewController {
         configureAction()
         configureCounterLabel()
         configureButton()
+        if let savedCounter = UserDefaults.standard.value(forKey: "counter") as? Int {
+            counter = savedCounter }
+        updateCounterLabel()
     }
     
     override func viewDidLayoutSubviews() {
@@ -54,17 +57,21 @@ extension DzikirCounterView {
         let tapCounterAction = UITapGestureRecognizer(target: self, action: #selector(counterAction(_:)))
         counterView.isUserInteractionEnabled = true
         counterView.addGestureRecognizer(tapCounterAction)
-        
         resetCounterButton.addTarget(self, action: #selector(resetCounter), for: .touchUpInside)
+       
     }
-    
     @objc func counterAction(_ sender: UITapGestureRecognizer) {
         counter += 1
         configureCounterLabel()
+        UserDefaults.standard.set(counter, forKey: "counter")
+        updateCounterLabel()
     }
     
     @objc func resetCounter() {
         counter = 0
         configureCounterLabel()
+    }
+    func updateCounterLabel() {
+        counterLabel.text = "\(counter)"
     }
 }
