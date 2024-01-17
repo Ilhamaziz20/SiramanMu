@@ -27,6 +27,10 @@ class mainMenuDzikirViewController: UIViewController {
         self.setupCollectionView()
         // Do any additional setup after loading the view.
     }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        navigationController?.setNavigationBarHidden(true, animated: animated)
+//    }
     func setupCollectionView () {
         self.dzikirCollectionView.delegate = self
         self.dzikirCollectionView.dataSource = self
@@ -52,6 +56,10 @@ extension mainMenuDzikirViewController: UICollectionViewDelegate, UICollectionVi
         let menudetailsholat = detailDzikirSholatView ()
         let menucoming = comingSoonView()
         let menuDzikirCounter = DzikirCounterView()
+        menudetail.hidesBottomBarWhenPushed = true
+        menudetailsholat.hidesBottomBarWhenPushed = true
+        menuDzikirCounter.hidesBottomBarWhenPushed = true
+//        menudetail.navigationController?.isNavigationBarHidden = true
         switch indexPath.row {
         case 0:
             navigationController?.pushViewController(menudetail, animated: true)
