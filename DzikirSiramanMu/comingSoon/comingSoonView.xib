@@ -31,7 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aky-EL-WP4">
-                    <rect key="frame" x="146" y="518" width="100" height="100"/>
+                    <rect key="frame" x="146.66666666666666" y="518" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="RV2-xJ-Jnc"/>
                         <constraint firstAttribute="height" constant="100" id="cQK-u6-8Pb"/>
@@ -42,11 +42,9 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="sS1-D1-4Nl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0ba-WP-WuL"/>
-                <constraint firstItem="Aky-EL-WP4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="146" id="JL8-Oy-zYa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Aky-EL-WP4" secondAttribute="bottom" constant="200" id="8ah-GH-Orw"/>
+                <constraint firstItem="Aky-EL-WP4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8im-rb-5hG"/>
                 <constraint firstItem="sS1-D1-4Nl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="Ot7-eS-vW9"/>
-                <constraint firstItem="Aky-EL-WP4" firstAttribute="top" secondItem="sS1-D1-4Nl" secondAttribute="bottom" constant="229" id="QoM-N0-OWw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Aky-EL-WP4" secondAttribute="bottom" constant="200" id="RYP-f1-m0a"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Aky-EL-WP4" secondAttribute="trailing" constant="147" id="SMS-U6-98b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sS1-D1-4Nl" secondAttribute="trailing" constant="20" id="lKx-uM-duX"/>
             </constraints>
             <point key="canvasLocation" x="35.877862595419849" y="19.718309859154932"/>

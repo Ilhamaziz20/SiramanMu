@@ -12,7 +12,6 @@
 		F890B1372B3C071900AD1A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F890B1362B3C071900AD1A90 /* AppDelegate.swift */; };
 		F890B1392B3C071900AD1A90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F890B1382B3C071900AD1A90 /* SceneDelegate.swift */; };
 		F890B13B2B3C071900AD1A90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F890B13A2B3C071900AD1A90 /* ViewController.swift */; };
-		F890B13E2B3C071900AD1A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F890B13C2B3C071900AD1A90 /* Main.storyboard */; };
 		F890B1402B3C071B00AD1A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F890B13F2B3C071B00AD1A90 /* Assets.xcassets */; };
 		F890B1432B3C071B00AD1A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F890B1412B3C071B00AD1A90 /* LaunchScreen.storyboard */; };
 		F890B1572B3C209500AD1A90 /* mainMenuDzikirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F890B1552B3C209500AD1A90 /* mainMenuDzikirViewController.swift */; };
@@ -27,6 +26,10 @@
 		F89C22E22B459B4C00A67F97 /* detailDzikirSholatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F89C22E02B459B4C00A67F97 /* detailDzikirSholatView.xib */; };
 		F89C22E52B459B7C00A67F97 /* dzikirSholatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C22E32B459B7C00A67F97 /* dzikirSholatCell.swift */; };
 		F89C22E62B459B7C00A67F97 /* dzikirSholatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F89C22E42B459B7C00A67F97 /* dzikirSholatCell.xib */; };
+		F8A6FEF42B58D6740013A546 /* cellTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6FEF22B58D6740013A546 /* cellTitle.swift */; };
+		F8A6FEF52B58D6740013A546 /* cellTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A6FEF32B58D6740013A546 /* cellTitle.xib */; };
+		F8A6FEF92B58D6AC0013A546 /* cellSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6FEF72B58D6AC0013A546 /* cellSection.swift */; };
+		F8A6FEFA2B58D6AC0013A546 /* cellSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A6FEF82B58D6AC0013A546 /* cellSection.xib */; };
 		F8B380EF2B4E2EB400536EBA /* dzikirPagiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B380ED2B4E2EB400536EBA /* dzikirPagiCell.swift */; };
 		F8B380F02B4E2EB400536EBA /* dzikirPagiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B380EE2B4E2EB400536EBA /* dzikirPagiCell.xib */; };
 		F8B636602B4FCB1700CFCCCB /* tabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6365E2B4FCB1700CFCCCB /* tabBarViewController.swift */; };
@@ -42,7 +45,6 @@
 		F890B1362B3C071900AD1A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F890B1382B3C071900AD1A90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F890B13A2B3C071900AD1A90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F890B13D2B3C071900AD1A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F890B13F2B3C071B00AD1A90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F890B1422B3C071B00AD1A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F890B1442B3C071B00AD1A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +60,10 @@
 		F89C22E02B459B4C00A67F97 /* detailDzikirSholatView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailDzikirSholatView.xib; sourceTree = "<group>"; };
 		F89C22E32B459B7C00A67F97 /* dzikirSholatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dzikirSholatCell.swift; sourceTree = "<group>"; };
 		F89C22E42B459B7C00A67F97 /* dzikirSholatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dzikirSholatCell.xib; sourceTree = "<group>"; };
+		F8A6FEF22B58D6740013A546 /* cellTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellTitle.swift; sourceTree = "<group>"; };
+		F8A6FEF32B58D6740013A546 /* cellTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellTitle.xib; sourceTree = "<group>"; };
+		F8A6FEF72B58D6AC0013A546 /* cellSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellSection.swift; sourceTree = "<group>"; };
+		F8A6FEF82B58D6AC0013A546 /* cellSection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellSection.xib; sourceTree = "<group>"; };
 		F8B380ED2B4E2EB400536EBA /* dzikirPagiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dzikirPagiCell.swift; sourceTree = "<group>"; };
 		F8B380EE2B4E2EB400536EBA /* dzikirPagiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dzikirPagiCell.xib; sourceTree = "<group>"; };
 		F8B6365E2B4FCB1700CFCCCB /* tabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,8 @@
 		F890AB532B5671BF00319993 /* siramanMu */ = {
 			isa = PBXGroup;
 			children = (
+				F8A6FEF62B58D6790013A546 /* cellSection */,
+				F8A6FEF12B58D5AD0013A546 /* cellTitle */,
 				F890AB542B5671DA00319993 /* siramanMuViewController.swift */,
 				F890AB552B5671DA00319993 /* siramanMuViewController.xib */,
 			);
@@ -115,7 +123,6 @@
 				F890B1362B3C071900AD1A90 /* AppDelegate.swift */,
 				F890B1382B3C071900AD1A90 /* SceneDelegate.swift */,
 				F890B13A2B3C071900AD1A90 /* ViewController.swift */,
-				F890B13C2B3C071900AD1A90 /* Main.storyboard */,
 				F890B13F2B3C071B00AD1A90 /* Assets.xcassets */,
 				F890B1412B3C071B00AD1A90 /* LaunchScreen.storyboard */,
 				F890B1442B3C071B00AD1A90 /* Info.plist */,
@@ -178,6 +185,24 @@
 				F89C22E42B459B7C00A67F97 /* dzikirSholatCell.xib */,
 			);
 			path = cellSholat;
+			sourceTree = "<group>";
+		};
+		F8A6FEF12B58D5AD0013A546 /* cellTitle */ = {
+			isa = PBXGroup;
+			children = (
+				F8A6FEF22B58D6740013A546 /* cellTitle.swift */,
+				F8A6FEF32B58D6740013A546 /* cellTitle.xib */,
+			);
+			path = cellTitle;
+			sourceTree = "<group>";
+		};
+		F8A6FEF62B58D6790013A546 /* cellSection */ = {
+			isa = PBXGroup;
+			children = (
+				F8A6FEF72B58D6AC0013A546 /* cellSection.swift */,
+				F8A6FEF82B58D6AC0013A546 /* cellSection.xib */,
+			);
+			path = cellSection;
 			sourceTree = "<group>";
 		};
 		F8B380EC2B4E2E8E00536EBA /* cellDzikir */ = {
@@ -274,10 +299,11 @@
 				F890B15D2B3C29D900AD1A90 /* mainDzikirCollectionViewCell.xib in Resources */,
 				FEEBCF812B50BBB20080CBDE /* DzikirCounterView.xib in Resources */,
 				F890AB572B5671DA00319993 /* siramanMuViewController.xib in Resources */,
+				F8A6FEFA2B58D6AC0013A546 /* cellSection.xib in Resources */,
 				F89C22E22B459B4C00A67F97 /* detailDzikirSholatView.xib in Resources */,
 				F890B1622B3C784600AD1A90 /* detailDzikirPagiView.xib in Resources */,
 				F89C22D42B3CFA7700A67F97 /* comingSoonView.xib in Resources */,
-				F890B13E2B3C071900AD1A90 /* Main.storyboard in Resources */,
+				F8A6FEF52B58D6740013A546 /* cellTitle.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +323,9 @@
 				F8B636602B4FCB1700CFCCCB /* tabBarViewController.swift in Sources */,
 				F89C22E52B459B7C00A67F97 /* dzikirSholatCell.swift in Sources */,
 				F8B380EF2B4E2EB400536EBA /* dzikirPagiCell.swift in Sources */,
+				F8A6FEF92B58D6AC0013A546 /* cellSection.swift in Sources */,
 				F890B1372B3C071900AD1A90 /* AppDelegate.swift in Sources */,
+				F8A6FEF42B58D6740013A546 /* cellTitle.swift in Sources */,
 				F890B1572B3C209500AD1A90 /* mainMenuDzikirViewController.swift in Sources */,
 				F89C22E12B459B4C00A67F97 /* detailDzikirSholatView.swift in Sources */,
 				F890B1392B3C071900AD1A90 /* SceneDelegate.swift in Sources */,
@@ -307,14 +335,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F890B13C2B3C071900AD1A90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F890B13D2B3C071900AD1A90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F890B1412B3C071B00AD1A90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -452,7 +472,6 @@
 				INFOPLIST_FILE = DzikirSiramanMu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,7 +499,6 @@
 				INFOPLIST_FILE = DzikirSiramanMu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

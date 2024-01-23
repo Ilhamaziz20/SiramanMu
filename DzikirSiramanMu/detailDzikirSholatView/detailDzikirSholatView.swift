@@ -27,6 +27,7 @@ class detailDzikirSholatView: UIViewController {
 }
 
 extension detailDzikirSholatView: UITableViewDelegate, UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listDoa.count
     }

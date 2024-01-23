@@ -10,7 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="siramanMuViewController" customModule="DzikirSiramanMu" customModuleProvider="target">
             <connections>
-                <outlet property="labelSiramanMu" destination="W85-e3-MyA" id="OXt-An-wT6"/>
+                <outlet property="imageMu" destination="r8s-9P-51p" id="ftu-Rm-3na"/>
+                <outlet property="tableProfile" destination="ZWV-UY-5f7" id="NCN-wT-4fw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,22 +20,29 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W85-e3-MyA">
-                    <rect key="frame" x="175" y="415" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r8s-9P-51p">
+                    <rect key="frame" x="10" y="69" width="373" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="ntU-ow-uRO"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZWV-UY-5f7">
+                    <rect key="frame" x="0.0" y="249" width="393" height="569"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="W85-e3-MyA" secondAttribute="bottom" constant="382" id="9fg-DL-g0F"/>
-                <constraint firstItem="W85-e3-MyA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="175" id="cq8-ln-Y2F"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W85-e3-MyA" secondAttribute="trailing" constant="176" id="mfB-0C-1Zk"/>
-                <constraint firstItem="W85-e3-MyA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="356" id="qPc-1r-iIB"/>
+                <constraint firstItem="ZWV-UY-5f7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Caw-rX-kOQ"/>
+                <constraint firstItem="ZWV-UY-5f7" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="IyP-LL-z04"/>
+                <constraint firstItem="ZWV-UY-5f7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cqp-ES-QiK"/>
+                <constraint firstItem="ZWV-UY-5f7" firstAttribute="top" secondItem="r8s-9P-51p" secondAttribute="bottom" constant="20" id="k3Z-qe-7Ru"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r8s-9P-51p" secondAttribute="trailing" constant="10" id="uaM-Oo-Ct1"/>
+                <constraint firstItem="r8s-9P-51p" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="uvb-2x-AUn"/>
+                <constraint firstItem="r8s-9P-51p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="yce-Be-Jaj"/>
             </constraints>
-            <point key="canvasLocation" x="82" y="20"/>
+            <point key="canvasLocation" x="81.679389312977094" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>

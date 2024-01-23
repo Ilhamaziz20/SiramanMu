@@ -16,15 +16,15 @@ class tabBarViewController: UITabBarController {
     }
     private func setupTabs () {
         let vcHome = siramanMuViewController()
-        vcHome.navigationController?.isNavigationBarHidden = true
+//        vcHome.navigationController?.isNavigationBarHidden = true
         let home = self.createNav(with: "SiramanMu", and: UIImage(systemName: "building"), vc: vcHome)
         
         let vcJadwal = comingSoonView()
-        vcJadwal.navigationController?.isNavigationBarHidden = true
+//        vcJadwal.navigationController?.isNavigationBarHidden = true
         let jadwal = self.createNav(with: "Jadwal Kegiatan", and: UIImage (systemName: "calendar.badge.clock"), vc: vcJadwal)
         
         let vcDzikir = mainMenuDzikirViewController()
-        vcDzikir.navigationController?.isNavigationBarHidden = true
+//        vcDzikir.navigationController?.isNavigationBarHidden = true
         let dzikir = self.createNav(with: "Dzikir", and: UIImage (systemName: "book.circle"), vc: vcDzikir)
         
         self.setViewControllers([home, jadwal, dzikir], animated: true)
@@ -41,7 +41,6 @@ class tabBarViewController: UITabBarController {
         nav.tabBarItem.title = title
         nav.tabBarItem.image = image
         nav.viewControllers.first?.navigationItem.title = title
-        nav.viewControllers.first?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: nil, action: nil)
         return nav
     }
 }
