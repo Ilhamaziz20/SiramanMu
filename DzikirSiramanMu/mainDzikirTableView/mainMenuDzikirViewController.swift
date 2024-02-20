@@ -27,10 +27,7 @@ class mainMenuDzikirViewController: UIViewController {
         self.setupCollectionView()
         // Do any additional setup after loading the view.
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        navigationController?.setNavigationBarHidden(true, animated: animated)
-//    }
+
     func setupCollectionView () {
         self.dzikirCollectionView.delegate = self
         self.dzikirCollectionView.dataSource = self
@@ -59,7 +56,6 @@ extension mainMenuDzikirViewController: UICollectionViewDelegate, UICollectionVi
         menudetail.hidesBottomBarWhenPushed = true
         menudetailsholat.hidesBottomBarWhenPushed = true
         menuDzikirCounter.hidesBottomBarWhenPushed = true
-//        menudetail.navigationController?.isNavigationBarHidden = true
         switch indexPath.row {
         case 0:
             navigationController?.pushViewController(menudetail, animated: true)
@@ -78,13 +74,5 @@ extension mainMenuDzikirViewController: UICollectionViewDelegate, UICollectionVi
         return CGSize(width: (collectionView.frame.width / 2) - 20, height: 150)
     }
 }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
